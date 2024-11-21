@@ -1,16 +1,19 @@
-button {
-  margin: 0 0.5em;
-} 
-.spacer {
+.app-header {
+  .spacer {
     flex: 1 1 auto;
   }
   
   .mat-toolbar {
     background-color: #000;
-    
-    button {
-      color: #FFF;
-    }
-
+    padding: 0 5rem;
   }
   
+  button {
+    margin: 0 0.5em;
+    color: #FFF;
+  } 
+
+
+}  
+
+

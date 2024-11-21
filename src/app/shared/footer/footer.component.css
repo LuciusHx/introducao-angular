@@ -1,0 +1,21 @@
+footer {
+    padding: 1.5em;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7em;
+        justify-content: space-around;
+             
+        .icons {
+            display: flex;
+            margin: 1em 2rem;
+        }
+    }
+
+}
