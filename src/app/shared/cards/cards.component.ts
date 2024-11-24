@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Input } from '@angular/core';
 @Component({
   selector: 'app-cards',
   standalone: false,
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './cards.component.css'
 })
 export class CardsComponent {
-
+  @Input() variant: 'primary' | 'secondary' = 'primary'
 }
