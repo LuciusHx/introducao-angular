@@ -1,14 +1,14 @@
 <mat-card class="card-busca" appearance="outlined">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      <mat-card-title>{{ titulo }}</mat-card-title>
+      <mat-card-subtitle>{{ desc }}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="/assets/imagens/Veneza.png" alt="Imagem Veneza">
     <mat-card-content>  
         <ul>
-            <li>Veneza</li>
-            <li>R$500,00</li>
+            <li>{{ nome }}</li>
+            <li>{{ preco }}</li>
         </ul>    
     </mat-card-content>
     <mat-card-actions>
