@@ -5,8 +5,10 @@
 <app-container>
     <h2>Promoções</h2>
     <div class="card-wapper">
-        <app-card-busca></app-card-busca>
-        <app-card-busca></app-card-busca>
+        <!-- esse 'compartilhando' é do elemento pai -->
+        <app-card-busca [titulo]="compartilhando"></app-card-busca>
+        <!-- já esse, é do elemento escoped -->
+        <app-card-busca titulo="filho"></app-card-busca>
         <app-card-busca></app-card-busca>
         <app-card-busca></app-card-busca>
         <app-card-busca></app-card-busca>

@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './banner.component.css'
 })
 export class BannerComponent {
-  @Input() src: string = 'assets/imagens/banner-homepage.png'
-  @Input() alt: string = 'Imagem do Banner'
+  @Input() src: string = ''
+  @Input() alt: string = ''
 }
