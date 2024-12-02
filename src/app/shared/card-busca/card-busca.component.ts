@@ -12,4 +12,5 @@ export class CardBuscaComponent {
   desc : string = `descrição teste`;
   nome: string = `Veneza`;
   preco: string[] = ['R$500,00', 'R$1000,00', 'R$2000,00']
+  aparecer: boolean = true;
 }

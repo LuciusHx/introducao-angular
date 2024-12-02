@@ -1,8 +1,16 @@
 <mat-card class="card-busca" appearance="outlined">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{ titulo }}</mat-card-title>
-      <mat-card-subtitle>{{ desc }}</mat-card-subtitle>
+      <!-- tem como colocar condição no ngIf // *ngIf="x === y" -->
+      <div class="title-tesc" *ngIf="aparecer; else titleNotFound">
+        <mat-card-title>{{ titulo }}</mat-card-title>
+        <mat-card-subtitle>{{ desc }}</mat-card-subtitle>
+      </div>
+      <ng-template #titleNotFound>
+        <div>
+          <mat-card-title>Título não encontrado</mat-card-title>
+          <mat-card-subtitle>Descrição não encontrada</mat-card-subtitle>
+        </div>
+      </ng-template>
     </mat-card-header>
     <img mat-card-image src="/assets/imagens/Veneza.png" alt="Imagem Veneza">
     <mat-card-content>  
