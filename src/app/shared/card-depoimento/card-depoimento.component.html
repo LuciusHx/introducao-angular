@@ -6,6 +6,12 @@
             <li>
                 <strong>{{ autoria }}</strong>
             </li>
+            <li>
+                <button [ngStyle]="{ 'background-color': bgColor, 'color': color }" (click)="showBG()">RED</button>
+                <button class="btn-blue" (click)="showBG()">BLUE</button>
+                <button class="btn-green" (click)="showBG()">GREEN</button>
+                <span>{{ show }}</span>
+            </li>
         </ul>
     </mat-card-content>
 </mat-card>

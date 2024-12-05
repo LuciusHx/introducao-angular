@@ -11,6 +11,7 @@ export class CardBuscaComponent {
   @Input() titulo: string = `teste`;
   desc : string = `descrição teste`;
   nome: string = `Veneza`;
-  preco: string[] = ['R$500,00', 'R$1000,00', 'R$2000,00']
+  precos: string[] = ['R$500,00', 'R$1000,00', 'R$2000,00']
   aparecer: boolean = true;
+
 }

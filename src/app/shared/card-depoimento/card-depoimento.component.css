@@ -1,7 +1,7 @@
 .depoimento {
-    max-width: 320px;
-    background-color: #FEF7FF;
-    border: none;
+  max-width: 320px;
+  background-color: #FEF7FF;
+  border: none;
 
     img {
       max-width: 56px;
@@ -26,3 +26,16 @@
       gap: 16px;
     }
   }
+
+button {
+  padding: 0.8em;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.btn-blue {
+  color: blue
+}
+.btn-green {
+  color: green;
+}

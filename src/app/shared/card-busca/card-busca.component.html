@@ -16,7 +16,9 @@
     <mat-card-content>  
         <ul>
             <li>{{ nome }}</li>
-            <li>{{ preco[1] }}</li>
+            <li *ngFor="let preco of precos; let i = index">
+              {{ preco }}
+            </li>
         </ul>    
     </mat-card-content>
     <mat-card-actions>
