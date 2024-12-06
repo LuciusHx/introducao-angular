@@ -8,11 +8,25 @@ import { Component } from '@angular/core';
   styleUrl: './card-depoimento.component.css'
 })
 export class CardDepoimentoComponent {
-  depoimento: string = `
-  Recomendo fortemente a agência de viagens Jornada.
-  Eles oferecem um serviço personalizado e de alta qualidade
-  que excedeu minhas expectativas em minha última viagem.
-`
+  cartoes = [
+    {
+      foto:'assets/imagens/avatar3.png', 
+      depoimento:"A agência é boa de verdade! Eu aconselho pegar na black friday.", 
+      autoria:"Fulana de tal"},
+    {
+      foto:'assets/imagens/avatar3.png', 
+      depoimento:"Cuida rapaziada, é bom! Eu aconselho pegar na black friday.", 
+      autoria:"siclano de tal"},
+    {
+      foto:'assets/imagens/avatar3.png', 
+      depoimento:"Recomendo fortemente a agência de viagens Jornada! Eu aconselho pegar na black friday.", 
+      autoria:"Lucius Hebert"},
+  ];
+//   depoimento: string = `
+//   Recomendo fortemente a agência de viagens Jornada.
+//   Eles oferecem um serviço personalizado e de alta qualidade
+//   que excedeu minhas expectativas em minha última viagem.
+// `
   autoria: string = 'Mariana Faustino'
 
   color: string = '#000000'
