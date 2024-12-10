@@ -16,8 +16,8 @@
     </div>
     <h2>Depoimentos</h2>
     <div class="card-depoimentos">
-        <!-- CONTEM UM FOR -->
-        <app-card-depoimento></app-card-depoimento>
+        
+        <app-card-depoimento [foto]="cartao.foto" [depoimento]="cartao.depoimento" [autoria]="cartao.autoria" *ngFor="let cartao of cartoes"></app-card-depoimento>
     </div>
 </app-container>
 <app-banner 

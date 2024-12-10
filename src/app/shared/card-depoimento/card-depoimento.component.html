@@ -1,10 +1,10 @@
-<mat-card class="depoimento" *ngFor="let cartao of cartoes">
+<mat-card class="depoimento">
     <mat-card-content>
-        <img src="{{ cartao.foto }}" alt="Avatar da pessoa">
+        <img [src]="foto" alt="Avatar da pessoa">
         <ul>
-            <li>{{ cartao.depoimento }}</li>
+            <li>{{ depoimento }}</li>
             <li>
-                <strong>{{ cartao.autoria }}</strong>
+                <strong>{{ autoria }}</strong>
             </li>
             <li>
                 <button [ngStyle]="{ 'background-color': bgColor, 'color': color }" (click)="showBG()">RED</button>
