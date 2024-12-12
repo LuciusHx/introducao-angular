@@ -2,7 +2,7 @@
     <mat-card-header>
       <!-- tem como colocar condição no ngIf // *ngIf="x === y" -->
       <div class="title-tesc" *ngIf="aparecer; else titleNotFound">
-        <mat-card-title>{{ titulo }}</mat-card-title>
+        <mat-card-title>{{ titulo | uppercase}}</mat-card-title>
         <mat-card-subtitle>{{ desc }}</mat-card-subtitle>
       </div>
       <ng-template #titleNotFound>

@@ -4,7 +4,7 @@
 </app-banner>
 <app-container>
     <h2>Promoções</h2>
-    <div class="card-wapper">
+    <div class="card-wapper" >
         <!-- esse 'compartilhando' é do elemento pai -->
         <app-card-busca [titulo]="compartilhando"></app-card-busca>
         <!-- já esse, é do elemento escoped -->
@@ -13,11 +13,17 @@
         <app-card-busca></app-card-busca>
         <app-card-busca></app-card-busca>
         <app-card-busca></app-card-busca>
+
     </div>
     <h2>Depoimentos</h2>
     <div class="card-depoimentos">
         
-        <app-card-depoimento [foto]="cartao.foto" [depoimento]="cartao.depoimento" [autoria]="cartao.autoria" *ngFor="let cartao of cartoes"></app-card-depoimento>
+        <app-card-depoimento 
+            [foto]="cartao.foto" 
+            [depoimento]="cartao.depoimento" 
+            [autoria]="cartao.autoria" 
+            *ngFor="let cartao of cartoes">
+        </app-card-depoimento>
     </div>
 </app-container>
 <app-banner 

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { User } from '../../interfaces/User';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ import { Component, Input } from '@angular/core';
 export class HomeComponent {
   //to puxando 
   @Input() compartilhando: string = 'Compartilhando Pai';
-  cartoes = [
+  
+  cartoes: User[] = [
     {
       foto:'assets/imagens/avatar3.png', 
       depoimento:"A agência é boa de verdade! Eu aconselho pegar na black friday. CONSEGUI, CONSEGUI, CONSEGUI", 
