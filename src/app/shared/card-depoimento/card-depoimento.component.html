@@ -3,15 +3,18 @@
         <img [src]="foto" alt="Avatar da pessoa">
         <ul>
             <li>{{ depoimento }}</li>
-            <li>
-                <strong>{{ autoria }}</strong>
-            </li>
-            <li>
-                <button [ngStyle]="{ 'background-color': bgColor, 'color': color }" (click)="showBG()">RED</button>
-                <button class="btn-blue" (click)="showBG()">BLUE</button>
-                <button class="btn-green" (click)="showBG()">GREEN</button>
-                <span>{{ show }}</span>
-            </li>
+            <div class="dep">
+                <li>
+                    <strong>{{ autoria }}</strong>
+                </li>
+                <li>
+                    <button 
+                        [ngClass]="{ 'selected': isSelected }" 
+                        (click)="changeButton()">RED</button>
+                    <button [ngClass]="{ 'selected': isSelected }" (click)="changeButton()">BLUE</button>
+                    <button [ngClass]="{ 'selected': isSelected }" (click)="changeButton()">GREEN</button>    
+                </li>
+            </div>
         </ul>
     </mat-card-content>
 </mat-card>

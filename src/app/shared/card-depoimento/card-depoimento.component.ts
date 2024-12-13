@@ -11,17 +11,9 @@ export class CardDepoimentoComponent {
   @Input() depoimento: string = '' 
   @Input() autoria: string = '' 
 
-  color: string = '#000000'
-  bgColor: string = '#FFFFFF'
-  show: boolean = false
-  showBG(){
-    this.show = !this.show //toggle
-    if(this.show){
-      this.color = 'red'; 
-      this.bgColor = 'white'; 
-    }else {
-      this.color = 'white'; 
-      this.bgColor = 'red'; 
-    }
+
+  isSelected: boolean = false
+  changeButton(){
+    this.isSelected = !this.isSelected //toggle
   }
 }

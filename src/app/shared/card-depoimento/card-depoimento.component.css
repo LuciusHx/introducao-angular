@@ -27,10 +27,21 @@
     }
   }
 
+.dep {
+  margin: 0.5rem 0;
+}
+
 button {
   padding: 0.8em;
   margin-right: 10px;
+  margin-top: 0.3rem;
+  border: 2px solid #ddd;
   border-radius: 100px;
+  cursor: pointer;
+}
+button.selected {
+  border: 2px solid #000; /* Borda selecionado */
+  background-color: #f0f8ff; /* Fundo */
 }
 
 .btn-blue {
